@@ -25,13 +25,13 @@
             >Web<span>Studio</span></a
           >
           <ul class="nav-list">
-            <li class="nav-list-item">
+            <li>
               <a href="./index.html" class="nav-link link current">Студія</a>
             </li>
-            <li class="nav-list-item">
+            <li>
               <a href="./portfolio.html" class="nav-link link">Портфоліо</a>
             </li>
-            <li class="nav-list-item">
+            <li>
               <a href="" class="nav-link link">Контакти</a>
             </li>
           </ul>
@@ -59,7 +59,7 @@
     <main>
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для<br />вашого бізнесу</h1>
-        <button type="button" class="primary-button btn">
+        <button type="button" class="primary-button btn" data-modal-open>
           Замовити послугу
         </button>
       </section>
@@ -128,6 +128,7 @@
                 width="370"
                 height="294"
               />
+              <p class="activities-text">Десктопні додатки</p>
             </li>
             <li>
               <img
@@ -136,6 +137,7 @@
                 width="370"
                 height="294"
               />
+              <p class="activities-text">Мобільні додатки</p>
             </li>
             <li>
               <img
@@ -144,6 +146,7 @@
                 width="370"
                 height="294"
               />
+              <p class="activities-text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -454,5 +457,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="close-btn-icon" width="11" height="11">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
